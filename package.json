@@ -39,11 +39,13 @@
     "d3-format": "^1.4.1",
     "d3-scale": "^3.2.0",
     "d3-scale-chromatic": "^1.5.0",
-    "d3-selection": "^1.4.0",
+    "d3-selection": "^1.4.2",
     "d3-shape": "^1.3.5",
-    "roughjs": "^4.0.0"
+    "roughjs": "^4.6.6"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "eslint": "^6.3.0",
     "eslint-config-strongloop": "^2.1.0",
     "jest": "^24.9.0",

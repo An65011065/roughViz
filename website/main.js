@@ -1,14 +1,28 @@
 import "./style.css";
-import { Bar } from "rough-viz";
+import Rectangle from "../src/Rectangle.js";
 
-// logo
-new Bar({
-  element: "#vizLogo", // container selection
-  data: { labels: ["a", "b", "c", "d"], values: [20, 16, 5, 15] },
-  axisFontSize: 0,
-  roughness: 3,
-  color: "pink",
-  fillStyle: "cross-hatch",
-  margin: { top: 10, right: 20, bottom: 15, left: 20 },
-  interactive: false,
+// Wait for DOM to be fully loaded
+window.addEventListener("load", () => {
+    try {
+        // Create a new Rectangle instance
+        new Rectangle({
+            element: "#visualization",
+            width: 500,
+            height: 300,
+            roughness: 4,
+            backgroundGradient: "sunset",
+            stroke: "#2c3e50",
+            strokeWidth: 2,
+            fillWeight: 1,
+            title: "Noisy Ember Rectangle",
+            margin: {
+                top: 50,
+                right: 20,
+                bottom: 20,
+                left: 20,
+            },
+        });
+    } catch (error) {
+        console.error("Error creating visualizations:", error);
+    }
 });

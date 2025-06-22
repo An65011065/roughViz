@@ -1,11 +1,23 @@
-import Bar from "./Bar";
-import BarH from "./BarH";
-import Donut from "./Donut";
-import Line from "./Line";
-import Network from "./Network";
-import Force from "./Force";
-import Pie from "./Pie";
-import Scatter from "./Scatter";
-import StackedBar from "./StackedBar";
+import Bar from "./Bar.js";
+import BarH from "./BarH.js";
+import Donut from "./Donut.js";
+import Line from "./Line.js";
+import Network from "./Network.js";
+import Force from "./Force.js";
+import Pie from "./Pie.js";
+import Rectangle from "./Rectangle.js";
+import Scatter from "./Scatter.js";
+import StackedBar from "./StackedBar.js";
 
-export { Bar, BarH, Donut, Line, Network, Force, Pie, Scatter, StackedBar };
+export {
+    Bar,
+    BarH,
+    Donut,
+    Line,
+    Network,
+    Force,
+    Pie,
+    Rectangle,
+    Scatter,
+    StackedBar,
+};
